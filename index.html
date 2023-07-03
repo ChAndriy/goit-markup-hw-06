@@ -39,6 +39,9 @@
               <a class="navigation-link link" href="">Contacts</a>
             </li>
           </ul>
+          <button class="openmob-menu-btn" type="button" data-menu-open><svg class="svg123" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger-1"></use>
+          </svg></button>
         </nav>
         <address class="address link">
           <ul class="address-list list">
@@ -54,6 +57,71 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mobile-men">
+        <div>
+        <button class="clocemob-menu-btn"  type="button" data-menu-close><svg class="modal-btn-svg" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black-18dp"></use>
+        </svg></button>
+        
+          <ul class="mobile-men-list list">
+            <li class="mobile-men-link-link">
+              <a class="mobile-men-link link " href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-men-link-link">
+              <a class="mobile-men-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-men-link-link">
+              <a class="mobile-men-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="mobile-men-list list">
+            <li class="mobile-men-tel">
+              <a class="mobile-men-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-men-email">
+              <a class="mobile-men-email link" href="mailto:info@devstudio.com"
+                >info@devstudio.com
+              </a>
+            </li>
+            
+          </ul>
+          <ul class="mobile-men-decor-list list">
+            <li class="mobile-men-decor-clas">
+              <a class="mobile-men-icon link" href="">
+                <svg class="mobile-men-decor-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-men-decor-clas">
+              <a class="mobile-men-icon link" href="">
+                <svg class="mobile-men-decor-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="mobile-men-decor-clas">
+              <a class="mobile-men-icon link" href=""
+                ><svg class="mobile-men-decor-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="mobile-men-decor-clas">
+              <a class="mobile-men-icon link" href=""
+                ><svg class="mobile-men-decor-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -130,13 +198,14 @@
           <h2 class="blockthree-title">What are we doing</h2>
           <ul class="blockthree-list list">
             <li class="blockthree-list-title">
-              <img src="./images/comp.jpg" alt="computer" width="360" />
+              <img  srcset="./images/comp.jpg 1x, ./images/comp-2x.jpg 2x" 
+               src="./images/comp.jpg" alt="computer" width="360" />
             </li>
             <li class="blockthree-list-title">
-              <img src="./images/smart.jpg" alt="smartphone" width="360" />
+              <img srcset="./images/smart.jpg 1x, ./images/smart-2x.jpg 2x" src="./images/smart.jpg" alt="smartphone" width="360" />
             </li>
             <li class="blockthree-list-title">
-              <img
+              <img srcset="./images/comp_smart.jpg 1x, ./images/comp_smart-2x.jpg 2x"
                 src="./images/comp_smart.jpg"
                 alt="computer_and_smartphone"
                 width="360"
@@ -151,7 +220,7 @@
           <h2 class="blockfour-title">Our Team</h2>
           <ul class="blockfour-list list">
             <li class="blockfour-items">
-              <img
+              <img srcset="./images/MarkGuerrero.jpg 1x, ./images/MarkGuerrero-2x.jpg 2x"
                 src="./images/MarkGuerrero.jpg"
                 alt="MarkGuerreroProductDesigner"
                 width="264"
@@ -189,7 +258,7 @@
               </div>
             </li>
             <li class="blockfour-items">
-              <img
+              <img srcset="./images/TomFord.jpg 1x, ./images/TomFord-2x.jpg 2x"
                 src="./images/TomFord.jpg"
                 alt="TomFordFrontendDeveloper"
                 width="264"
@@ -227,7 +296,7 @@
               </div>
             </li>
             <li class="blockfour-items">
-              <img
+              <img srcset="./images/CamilaGarcia.jpg 1x, ./images/CamilaGarcia-2x.jpg 2x"
                 src="./images/CamilaGarcia.jpg"
                 alt="CamilaGarciaMarketing"
                 width="264"
@@ -265,7 +334,7 @@
               </div>
             </li>
             <li class="blockfour-items">
-              <img
+              <img srcset="./images/DanielWilson.jpg 1x, ./images/DanielWilson-2x.jpg 2x"
                 src="./images/DanielWilson.jpg"
                 alt="DanielWilsonUIDesigner"
                 width="264"
@@ -510,5 +579,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
