@@ -1091,7 +1091,9 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #404BBF;}
+color: #404BBF;
+}
+
 .address {
   display: flex;
   font-style: normal;
@@ -1099,14 +1101,18 @@ color: #404BBF;}
   }
 .address-list {
   display: flex;
-  gap: 40px;
+  gap: 12px;
+  flex-direction:column;
  }
 .address-link {
-  font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
 transition: color var(--transition);
+font-size: 12px;
+font-family: Roboto;
+font-style: normal;
+
 }
 .address-link:hover{
 font-size: 16px;
@@ -1120,6 +1126,9 @@ letter-spacing: 0.02em;
 color: #404BBF;
 }
 .mobile-men{
+  display: none;
+}
+.openmob-menu-btn{
   display: none;
 }
 }
@@ -1251,9 +1260,10 @@ color: #404BBF;
     .address-list {
       display: flex;
       gap: 40px;
+      flex-direction:row;
      }
     .address-link {
-      font-size: 16px;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
