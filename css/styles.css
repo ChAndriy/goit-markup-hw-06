@@ -988,6 +988,10 @@ margin-bottom:  72px;
   .container{
     max-width:768px;
   }
+  
+  .header-navigation {
+    display:block;   
+  }
   .blocktoo-list{
     width: calc((100% - 24px) / 2);
   }
@@ -1149,6 +1153,12 @@ color: #404BBF;
 .header-navigation-link{
   margin-right: 76px;
 }
+.footer-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
 
 }
 
@@ -1299,6 +1309,7 @@ color: #404BBF;
     letter-spacing: 0.02em;
     color: #404BBF;}
      .blockone {
+      
       background-image: 
       linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/people-office.jpg ) ;
@@ -1307,7 +1318,9 @@ color: #404BBF;
      (min-resolution: 192dpi),
      (min-resolution: 2dppx){
        .blockone{
+        
          background-image: 
+         
          linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
          url(../images/people-office-2x.jpg ) ;
        }
