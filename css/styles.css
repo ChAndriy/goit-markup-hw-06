@@ -1012,9 +1012,12 @@ margin: 0 auto;
        background-image: 
        linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
        url(../images/Dark-bg-plan-2x.jpg ) ;
-       
-     }
-   }
+            }
+       }
+.blockone-title {
+        font-size: 56px;
+        max-width: 496px;
+       }
   .blocktoo-list{
     width: calc((100% - 24px) / 2);
   }
