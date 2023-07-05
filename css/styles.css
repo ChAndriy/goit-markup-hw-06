@@ -795,7 +795,7 @@ text-transform: capitalize;
 
 }
 .blocktoo-text {
-  font-size: 16px;
+font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
@@ -984,11 +984,14 @@ margin-bottom:  72px;
 
 
 
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) and (max-width:1158px){
   .container{
     max-width:768px;
   }
-  
+  .container-header{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .header-navigation {
     display:block;   
   }
@@ -1061,6 +1064,7 @@ width: calc((100% - 24px) / 2);
   display: flex;
   flex-wrap: wrap;
   max-width:568px;
+  gap: 72px 24px;
 }
 .footer-container-wraper{
   display: inline;
@@ -1072,13 +1076,13 @@ width: calc((100% - 24px) / 2);
 }
 .footer-decor-media{
   justify-content: start;
-  margin-left: 24px;
+  margin-left: 0;
 }
 .footer-decor-texts {
   text-align: left;
 }
 .footer-decor-list {
-  
+  margin-bottom: 0;
 }
 .footer-input {
   width: 264px;
@@ -1188,6 +1192,12 @@ color: #404BBF;
   .container
   {max-width: 1158px;
   }
+  .openmob-menu-btn{
+    display: none;
+  }
+  .blocktoo {
+    gap: 24px;
+  }
   .blocktoo-list{
     width: calc((100% - 72px) / 4); }
     .blocktoo-list-block
@@ -1208,6 +1218,9 @@ color: #404BBF;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
   }
+  .blocktoo-text {
+    font-weight: 400;
+    }
   .blockthree {
     padding-bottom: 120px;
     display: block;
@@ -1219,10 +1232,12 @@ color: #404BBF;
   }
   .blockfour-list {
     display: flex;
+    
     gap: 24px;
     justify-content: center;
     }
     .blockfour-items {
+      margin: 0 ;
       background: #FFFFFF;
       width: calc((100% - 72px) / 4);
      }
@@ -1247,20 +1262,35 @@ color: #404BBF;
       align-items: baseline;
     }
     .footer-container-wraper{
-      
+     
     }
     .footer-decor-media{
     margin-right:80px;
     margin-left: 120px;
+    justify-content: left;
     }
+    .footer-decor-list {
+      margin-bottom: 0;
+      }
    
     .footer-input {
       width: 264px;
     }
+    .footer-form {
+      display: flex;
+    gap: 24px;
+  }
+  .header-navigation-footer{
+    text-align: left;
+  }
+  .footer-decor-texts {
+    text-align: left;
+  }
     
     .navigation-list {
       display: flex;
       gap: 40px;
+      
      }
      .navigation-link-link{
       padding: 24px 0 ;
