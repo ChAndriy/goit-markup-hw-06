@@ -984,7 +984,8 @@ margin-bottom:  72px;
 
 
 
-@media screen and (min-width:768px) and (max-width:1158px){
+@media screen and (min-width:768px)
+{
   .container{
     max-width:768px;
   }
@@ -1259,14 +1260,14 @@ color: #404BBF;
     }
     .footer-container{
       display: flex;
+      flex-wrap: nowrap;
       align-items: baseline;
     }
     .footer-container-wraper{
      
     }
     .footer-decor-media{
-    margin-right:80px;
-    margin-left: 120px;
+    margin: 0 auto;
     justify-content: left;
     }
     .footer-decor-list {
@@ -1278,6 +1279,7 @@ color: #404BBF;
     }
     .footer-form {
       display: flex;
+      flex-wrap: nowrap;
     gap: 24px;
   }
   .header-navigation-footer{
